@@ -6,9 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rigidBody;
     private GameObject focalPoint;
-    private float powerupStrength = 15.0f;
     public GameObject powerupIndicator;
     public float speed = 5.0f;
+    public float powerupStrength = 25.0f;
     public bool hasPowerup = true;
     void Start()
     {
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Powerup"))
+        if (other.CompareTag("PowerUp"))
         {
             hasPowerup = true;
             Destroy(other.gameObject);
