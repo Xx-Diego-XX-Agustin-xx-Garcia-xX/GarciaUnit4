@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public GameObject rocketPrefab;
     public PowerUpType currentPowerUp = PowerUpType.None;
     public float speed = 5.0f;
-    public float powerupStrength = 100.0f;
+    public float powerupStrength = 25.0f;
     public bool hasPowerup = true;
     void Start()
     {
